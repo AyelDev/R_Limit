@@ -2,6 +2,7 @@ package com.ayeldev.ratelimiter.Config;
 
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 import com.ayeldev.ratelimiter.Filter.RateLimitingFilter;
 

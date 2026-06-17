@@ -23,7 +23,7 @@ public class TestController {
 
     @GetMapping("/test")
     public String testRateLimit(HttpServletResponse response){
-            response.setStatus(200);
+            response.setStatus(HttpServletResponse.SC_OK);
             response.setContentType("application/json");
             response.setCharacterEncoding("UTF-8");
         return this.gson.toJson(Map.of("message", "Request reached successfully"));
