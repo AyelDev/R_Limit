@@ -52,3 +52,7 @@ The best way to learn this is to break your own implementation first — try to 
 
 reference link:
 https://www.geeksforgeeks.org/advance-java/implementing-rate-limiting-in-a-spring-boot-application/
+
+https://medium.com/@m-elbably/rate-limiting-the-sliding-window-algorithm-daa1d91e6196
+
+https://smudge.ai/blog/ratelimit-algorithms
