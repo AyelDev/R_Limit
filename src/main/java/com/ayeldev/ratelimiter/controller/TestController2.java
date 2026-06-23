@@ -13,15 +13,15 @@ import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @RestController
-@RequestMapping("/api")
-public class TestController {
+@RequestMapping("/v2/api")
+public class TestController2 {
 
     private final Gson gson;
     private final String jsonContent = "application/json";
     private final String charEncoding = "UTF-8";
 
     @Autowired
-    public TestController(Gson gson) {
+    public TestController2(Gson gson) {
         this.gson = gson;
     }
 
@@ -31,10 +31,9 @@ public class TestController {
         response.setCharacterEncoding(charEncoding);
     }
 
-    @GetMapping("/test")
-    public String testRateLimit(HttpServletResponse response) {
+    @GetMapping("/sliding-windows")
+    public String slidingWindows(HttpServletResponse response) {
         this.setResponse(response, 200);
-        return this.gson.toJson(Map.of("message", "Request reached successfully"));
+        return this.gson.toJson(Map.of("message", "Request has been successfully reached"));
     }
-
 }

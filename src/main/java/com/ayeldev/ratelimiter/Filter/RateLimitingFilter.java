@@ -19,7 +19,8 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-@Component
+// Note: remove @Component if using another component to prevent url mapping to other
+// @Component
 public class RateLimitingFilter implements Filter {
 
     private final Gson gson;
